@@ -1,7 +1,5 @@
-from collections import defaultdict
-
 N = 1000
-g = defaultdict(list)
+g = [[] for _ in range(N)] 
 n, P = map(int, input().split())
 dpD = [[-1] * N for _ in range(N)]
 dpU = [[-1] * N for _ in range(N)]
